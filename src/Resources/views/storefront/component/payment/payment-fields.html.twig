@@ -1,0 +1,16 @@
+{% sw_extends "@Storefront/storefront/component/payment/payment-fields.html.twig" %}
+
+  {% block component_payment_method_description %}
+      <div class="payment-method-description">
+          <strong>{{ payment.translated.name }}</strong>
+          {% if payment.translated.description %}
+              <p>{{ payment.translated.description|raw }}</p>
+          {% endif %}
+      </div>
+      {% if payment.hasExtension('tpayBankList') %}
+          {% sw_include "@TpayShopwarePayment/storefront/component/payment/tpay-bank-selection.html.twig" with {
+              bankList: payment.getExtension('tpayBankList').all(),
+              customer: context.customer
+          } %}
+      {% endif %}
+  {% endblock %}
