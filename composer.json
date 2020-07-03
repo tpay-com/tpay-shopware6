@@ -1,0 +1,27 @@
+{
+    "name": "tpay/shopware-payment",
+    "description": "Tpay Payment for Shopware 6",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "require": {
+        "tpay-com/tpay-php": "^2.1.2",
+        "whitecube/lingua": "^1.0"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tpay\\ShopwarePayment\\": "src/"
+        }
+    },
+    "extra": {
+        "shopware-plugin-class": "Tpay\\ShopwarePayment\\TpayShopwarePayment",
+        "label": {
+            "de-DE": "Tpay Payment für Shopware 6",
+            "en-GB": "Tpay Payment for Shopware 6",
+            "pl-PL": "Tpay Payment dla Shopware 6"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "tpay-shopware-payment": {
+        "config": {
+            "successTestMerchantCredentialsNotificationTitle": "Testowe połączenie",
+            "successTestMerchantCredentialsNotificationMessage": "Pomyślnie nawiązano testowe połączenie z serwerem Tpay",
+            "errorTestMerchantCredentialsNotificationTitle": "Nieudane testowe połączenie",
+            "errorTestMerchantCredentialsNotificationMessage": "Wystąpił problem z tetowym połączeniem. Sprawdź poprawność podanych danych",
+            "buttonCredentialsTest": "Przetestuj połączenie"
+        },
+        "order": {
+            "tpayTransactionIdLabel": "Identyfikator transakcji Tpay"
+        }
+    }
+}
